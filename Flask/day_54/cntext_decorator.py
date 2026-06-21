@@ -219,7 +219,7 @@ divide(10, 2)
 
 
 
-
+print('fck up ueself')
 
 
 
