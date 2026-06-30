@@ -8,4 +8,10 @@ def fn2(text):
 
 text = "prabh"
 
-print(fn2(fn1(text)))
+yo = fn1(text)
+print(yo)
+
+xo = fn2(yo )
+print(xo)
+
+

@@ -43,7 +43,7 @@ class Student:
 
 s1 = Student("Sidhu")
 s2 = Student("Aman")
-
+print(s1)
 '''
 
 for s1:

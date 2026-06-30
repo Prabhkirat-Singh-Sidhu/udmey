@@ -1,0 +1,2 @@
+here we save all the image for the rendering into the webpage
+all the css also goes into the static, as for my current knowledge
