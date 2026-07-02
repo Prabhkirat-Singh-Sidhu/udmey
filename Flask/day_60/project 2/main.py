@@ -64,14 +64,28 @@ def get_all_posts():
 def about():
     return render_template("about.html")
 
-@app.route("/contact")
+@app.route("/contact", methods = ["POST","GET"])
 def contact():
-    return render_template("contact.html")
 
-# ✅ PROPERLY INDENTED - inside the app context
-@app.route("/form-entry", methods=["POST"])  # Also fixed: 'method' → 'methods', and it's a list
-def receive_data():
-    return "<h1>Successfully sent your message</h1>"
+# ''' ✅ PROPERLY INDENTED - inside the app context
+# @app.route("/form-entry", methods=["POST, GET"])  # Also fixed: 'method' → 'methods', and it's a list
+# def receive_data():'''
+    
+    if request.method == "POST":
+        name = request.form["name"]
+        email = request.form["email"]
+        phone = request.form["phone"]
+        message = request.form["message"]
+
+        print(name)
+        print(email)
+        print(phone)
+        print(message)
+
+        return render_template("contact.html", msg_sent = True)
+    return render_template("contact.html", msg_sent = False)
+
+
 
 @app.route("/post/<int:index>")
 def show_post(index):
