@@ -6,7 +6,7 @@ connection.starttls()
 
 connection.login(
     user="you@gmail.com",
-    password="wallahabibi"
+    password="wallahabibii"
 )
 
 connection.sendmail(
@@ -15,4 +15,4 @@ connection.sendmail(
     msg="Hello World"
 )
 
-connection.quit()
+connection.quit()  
