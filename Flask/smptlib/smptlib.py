@@ -5,7 +5,7 @@ connection = smtplib.SMTP("smtp.gmail.com", 587)
 connection.starttls()
 
 connection.login(
-    user="you@gmail.com",
+    user="wallahabibi@gmail.com",
     password="wallahabibii"
 )
 
