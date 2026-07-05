@@ -1,3 +1,5 @@
+#main module
+
 from flask import Flask
 from auth import auth_bp
 
