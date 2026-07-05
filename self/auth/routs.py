@@ -1,3 +1,4 @@
+# all the routes for he auth directory will be here
 from . import auth_bp
 
 @auth_bp.route("/login")
